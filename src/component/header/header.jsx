@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -28,7 +27,7 @@ function Header() {
 
   return (
     <React.Fragment>
-      <AppBar position="static" sx={{ background: 'linear-gradient( 15deg, #2F80ED   , #B2FFDA)' }}>
+      <AppBar position="static" sx={{ background: 'linear-gradient( to right, #12063b   , #09555c)' }}>
         <Toolbar>
           {/* Menu Icon */}
           <IconButton

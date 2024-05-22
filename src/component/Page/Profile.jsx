@@ -25,16 +25,16 @@ const Profile = () => {
                             <Typography variant="h4" color="primary" gutterBottom>
                                 RUSHIKESH HARIKISAN JANORKAR
                             </Typography>
-                            <Typography variant="h6" color="textSecondary" gutterBottom>
+                            <Typography variant="h6" color="white" gutterBottom>
                                 FullStack Developer
                             </Typography>
-                            <Typography variant="body1" color="textSecondary" gutterBottom>
+                            <Typography variant="body1" color="white" gutterBottom>
                                 <strong>Location:</strong> Pune, India
                             </Typography>
-                            <Typography variant="body1" color="textSecondary" gutterBottom>
+                            <Typography variant="body1" color="white" gutterBottom>
                                 <strong>Email:</strong> rushikeshjanorkar867@gmail.com
                             </Typography>
-                            <Typography variant="body1" color="textSecondary" gutterBottom>
+                            <Typography variant="body1" color="white" gutterBottom>
                                 <strong>Phone:</strong> +91-8551867867
                             </Typography>
                         

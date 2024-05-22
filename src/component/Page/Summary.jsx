@@ -57,7 +57,7 @@ const Summary = () => {
                                 borderRadius: "5px",
                                 transition: "background-color 0.3s",
                                 '&:hover': {
-                                    backgroundColor: "#f0f0f0",
+                                    backgroundColor: "#B2FFDA",
                                     cursor: "pointer"
                                 }
                             }}
@@ -83,7 +83,7 @@ const Summary = () => {
                                 borderRadius: "5px",
                                 transition: "background-color 0.3s",
                                 '&:hover': {
-                                    backgroundColor: "#f0f0f0",
+                                    backgroundColor: "#B2FFDA",
                                     cursor: "pointer"
                                 }
                             }}
@@ -110,7 +110,7 @@ const Summary = () => {
                                 borderRadius: "5px",
                                 transition: "background-color 0.3s",
                                 '&:hover': {
-                                    backgroundColor: "#f0f0f0",
+                                    backgroundColor: "#B2FFDA",
                                     cursor: "pointer"
                                 }
                             }}
@@ -128,7 +128,7 @@ const Summary = () => {
                                 borderRadius: "5px",
                                 transition: "background-color 0.3s",
                                 '&:hover': {
-                                    backgroundColor: "#f0f0f0",
+                                    backgroundColor: "#B2FFDA",
                                     cursor: "pointer"
                                 }
                             }}

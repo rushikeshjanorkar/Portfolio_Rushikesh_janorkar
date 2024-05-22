@@ -19,7 +19,7 @@ const Main = () => {
                 }}
             >
                 <Grid container>
-                    <Grid item sm={12} sx={{ background: 'linear-gradient( to right, #2F80ED   , #B2FFDA)' }}>
+                    <Grid item sm={12} sx={{ background: 'linear-gradient( to right, #12063b   , #09555c)' }}>
                         <Profile />
                         <Summary />
                         <Education />

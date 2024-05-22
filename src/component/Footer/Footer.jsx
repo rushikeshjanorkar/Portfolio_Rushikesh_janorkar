@@ -9,7 +9,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 const Footer = () => {
   return (
     <Box component="footer" 
-    sx={{ background: 'linear-gradient( 85deg, #2F80ED   , #B2FFDA)' }}>
+    sx={{ background: 'linear-gradient( to right, #12063b   , #09555c)' }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 3 }}>
         {/* Quick Links Section */}
         <Box sx={{ flex: 1, mr: 2 }}>
