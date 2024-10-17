@@ -13,6 +13,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import { color } from 'framer-motion';
 
 function Header() {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -33,29 +34,28 @@ function Header() {
           <IconButton
             size="large"
             color="inherit"
-            onClick={handleDrawerOpen}
+           // onClick={handleDrawerOpen}
             sx={{ mr: 1 }}
           >
            <Avatar alt="Rushikesh" src="/images.jpg" style={{ scale: '70%' }} />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: 'white', fontFamily: 'normal', fontSize: '20px' }}>
-            Rushikesh Harikisan Janorkar
+          <Typography variant="h6" color="#AFDDE5" sx={{ flexGrow: 1,  fontFamily: 'normal', fontSize: { md: "1.5rem", sm: "0.5rem", xs: "0.6rem" } }}>
+            Rushikesh H Janorkar
           </Typography>
-          <Box sx={{ display: "flex", alignItems: "center", ml: 2 }}>
-            <Link href="/" color="inherit" underline="hover" sx={{ mx: 1 }}>
-              <Typography variant="body1" sx={{ cursor: "pointer" }}>
+          <Box sx={{ display: "flex", alignItems: "center", ml: 2 , fontSize: { md: "1rem", sm: "0.5rem", xs: "0.6rem" }}}>
+            <Link href="/" color="#AFDDE5" underline="hover" sx={{ mx: 1 }}>
                 HOME
-              </Typography>
+              
             </Link>
-            <Link href="/profile" color="inherit" underline="hover" sx={{ mx: 1 }}>
-              <Typography variant="body1" sx={{ cursor: "pointer" }}>
+            <Link href="/profile" color="#AFDDE5" underline="hover" sx={{ mx: 1 }}>
+          
                 PROFILE
-              </Typography>
+             
             </Link>
-            <Link href="/experience" color="inherit" underline="hover" sx={{ mx: 1 }}>
-              <Typography variant="body1" sx={{ cursor: "pointer" }}>
+            <Link href="/experience" color="#AFDDE5" underline="hover" sx={{ mx: 1 }}>
+              
                 EXPERIENCE
-              </Typography>
+              
             </Link>
           </Box>
        
@@ -63,19 +63,19 @@ function Header() {
         </Toolbar>
       </AppBar>
       <Drawer anchor="left" open={openDrawer} onClose={handleDrawerClose}>
-      <List sx={{ width: "auto", height:"750px" , backgroundColor: 'green' }}>
-        <Typography variant="h6" component="div" sx={{ color: 'black', fontFamily: 'normal', fontSize: '15px', display: 'flex', alignItems: 'center', padding: '16px' }}>
+      <List sx={{ width: "auto", height:"750px" , background: 'linear-gradient( to right, #12063b   , #09555c)' }}>
+        <Typography variant="h6" component="div" sx={{ color: 'white', fontFamily:"Courier New, monospace", fontSize: '15px', display: 'flex', alignItems: 'center', padding: '16px' }}>
           <IconButton sx={{ p: 1 }}>
             <Avatar alt="Rushikesh" src="/images.jpg" />
           </IconButton>
           Rushikesh H Janorkar
         </Typography>
         <Divider />
-        <List>
+        <List sx={{color: "white" }}>
           {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
-                <ListItemIcon>
+                <ListItemIcon sx={{color: "white" }} >
                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                 </ListItemIcon>
                 <ListItemText primary={text} />

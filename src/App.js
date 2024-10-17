@@ -1,18 +1,26 @@
 import React from 'react';
-import Header from './component/header/header.jsx';
-import Footer from './component/Footer/Footer.jsx'
-import Main from './component/Page/main';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './component/header/Header.jsx'
+import Footer from './component/Footer/Footer.jsx';
+import Main from './component/Page/Main.jsx';
+import Profile from './component/Page/Profile.jsx';
+import Summary from './component/Page/Summary.jsx';
+import Education from './component/Education/Education.jsx';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <main>
-      <Main name="Rushikesh Harikisan Janorkar"  role="Backend Devloper" avatarSrc="/images.jpg"/>
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/summary" element={<Summary />} />
+          <Route path="/education" element={<Education />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

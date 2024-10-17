@@ -2,8 +2,9 @@ import React from "react";
 import {Grid} from "@mui/material";
 import Summary from "./Summary";
 import Profile from "./Profile";
-import Education from "./../Education/Education";
-import { ScrollAnimation } from "react-animate-on-scroll";
+import Education from "../Education/Education";
+import Project from "../Project/Project";
+
 
 const Main = () => {
     return (
@@ -23,6 +24,8 @@ const Main = () => {
                         <Profile />
                         <Summary />
                         <Education />
+                        <Project/>
+                    
                     </Grid>
                 </Grid>
             </Grid>
